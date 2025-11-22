@@ -18,6 +18,12 @@ title: P4 GSoC # the main title
 
 tagline: GSoC projects under P4 language Consortium # it will display as the subtitle
 
+include:
+  - _posts/2024/projects/bmv2_pna/
+  - _posts/2024/projects/container_migration/
+  - _posts/2024/projects/formatter/
+  - _posts/2024/projects/documentation/
+
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
