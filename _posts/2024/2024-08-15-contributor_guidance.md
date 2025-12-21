@@ -1,5 +1,5 @@
 ---
-title: P4 GSoC 2024 Contributor Guidlines
+title: P4 GSoC 2024 Contributor Guidelines
 date: 2024-08-10 10:10:10 +/-TTTT
 categories: [GSOC 2024, Contributor Guideline 2024]
 tags: [gsoc2024,guide]     # TAG names should always be lowercase
