@@ -24,9 +24,9 @@ include:
   - _posts/2024/projects/formatter/
   - _posts/2024/projects/documentation/
   - _posts/2025/projects/bmv2_pkt_out/
-  - _posts/2025/projects/gigaflow
-  - _posts/2025/projects/p4sim
-  - _posts/2025/projects/spliDT
+  - _posts/2025/projects/gigaflow/
+  - _posts/2025/projects/p4sim/
+  - _posts/2025/projects/spliDT/
 
 
 description: >- # used by seo meta and the atom feed
