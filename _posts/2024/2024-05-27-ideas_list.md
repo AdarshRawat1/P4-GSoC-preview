@@ -90,7 +90,8 @@ The general idea is to improve documentation for the reference P4 compiler proje
 
 [p4-constraints](https://github.com/p4lang/p4-constraints) is a useful extension of the P4 programming language that is currently architected as a standalone library separate from the P4 compiler, p4c.
 
-<img width="757" alt="image" src="[assets/p4_constraints.png](https://github.com/user-attachments/assets/508d0fcd-d8e3-41fa-8c4d-e71e27aabe74)">
+<img width="757" alt="p4_constraints" src="https://github.com/user-attachments/assets/d23c1bc0-f395-456a-978e-81a415950a00" />
+
 
 The goal of this project is to integrate the p4-constraints frontend, which parses and type checks the constraint annotations, into the p4c frontend. This architecture change provides the following benefits:
 - **For P4 programmers**: Immediate feedback about syntax or type errors in constraints during P4 compilation.
