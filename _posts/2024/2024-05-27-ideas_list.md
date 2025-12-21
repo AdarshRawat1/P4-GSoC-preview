@@ -1,7 +1,7 @@
 ---
 title: P4 GSoC 2024 Ideas List
 date: 2024-05-27 10:10:10 +/-TTTT
-categories: [GSOC 2024,Idea List]
+categories: [GSOC 2024,Contributor Guideline 2024]
 tags: [gsoc2024,]     # TAG names should always be lowercase
 render_with_liquid: false
 permalink: /posts/2024/idea_list/

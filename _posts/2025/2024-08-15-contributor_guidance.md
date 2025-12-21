@@ -1,7 +1,7 @@
 ---
-title: P4 GSoC 2025 Contributor Guidance
+title: P4 GSoC 2025 Contributor Guidlines
 date: 2025-02-07 00:00:00 +/-TTTT
-categories: [GSOC 2025,]
+categories: [GSOC 2025,Contributor Guideline 2025]
 tags: [gsoc2025,guide]     # TAG names should always be lowercase
 render_with_liquid: false
 permalink: /posts/2025/contributor_guidance/
