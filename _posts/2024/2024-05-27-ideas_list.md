@@ -63,15 +63,15 @@ The general idea is to improve documentation for the reference P4 compiler proje
 
 - The p4c repo to build documentation site for: https://github.com/p4lang/p4c
 - Current documentation locations:
-  - https://github.com/p4lang/p4c/blob/main/README.md
-  - https://github.com/p4lang/p4c/tree/main/docs
+  - [https://github.com/p4lang/p4c/blob/main/README.md](https://github.com/p4lang/p4c/blob/main/README.md)
+  - [https://github.com/p4lang/p4c/tree/main/docs](https://github.com/p4lang/p4c/tree/main/docs)
 - Potentially relevant projects:
-  - https://github.com/p4lang/tutorials
+  - [https://github.com/p4lang/tutorials](https://github.com/p4lang/tutorials)
     - We can consider whether to also include this tutorial as part of the p4c documentation site.
 - Some language/compiler project documentation sites to draw inspirations from:
-  - https://tvm.apache.org/docs/
-  - https://mlir.llvm.org/
-  - https://triton-lang.org/
+  - [https://tvm.apache.org/docs/](https://tvm.apache.org/docs/)
+  - [https://mlir.llvm.org/](https://mlir.llvm.org/)
+  - [https://triton-lang.org/](https://triton-lang.org/)
 
 ---
 
