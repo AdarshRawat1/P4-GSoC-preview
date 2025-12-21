@@ -1,3 +1,12 @@
+---
+title: SpliDT: Scaling Stateful Decision Tree Algorithms in P4
+date: 2025-09-09 08:05:00 +/-TTTT 
+categories: [GSOC 2025]
+tags: [gsoc2025]     # TAG names should always be lowercase
+render_with_liquid: false
+permalink: /posts/2025/spliDT
+---  
+
 # SpliDT: Scaling Stateful Decision Tree Algorithms in P4
 
 ## Google Summer of Code 2025 Final Report

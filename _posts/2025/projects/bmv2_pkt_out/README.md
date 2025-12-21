@@ -1,3 +1,12 @@
+---
+title: BMv2 With All Possible Output Packets
+date: 2025-09-02 17:15:00 +/-TTTT 
+categories: [GSOC 2025]
+tags: [gsoc2025]     # TAG names should always be lowercase
+render_with_liquid: false
+permalink: /posts/2025/bmv2_pkt_out
+---
+
 # BMv2 With All Possible Output Packets
 **Contributor**: Xiyu Hao  ([@Hoooao])
 
