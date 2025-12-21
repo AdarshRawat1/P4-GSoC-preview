@@ -1,3 +1,11 @@
+---
+title: P4 GSoC 2025 Ideas List
+date: 2025-02-09 00:00:00 +/-TTTT
+categories: [GSOC 2025,Idea List]
+tags: [gsoc2025,]     # TAG names should always be lowercase
+render_with_liquid: false
+permalink: /posts/2025/idea_list/
+---
 # P4 GSoC 2025 Ideas List
 
 ## Application process
