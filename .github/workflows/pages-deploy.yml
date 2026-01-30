@@ -55,10 +55,15 @@ jobs:
           cp -r 20[0-9][0-9] blog/_posts/ 2>/dev/null || true
 
       - name: Build site
-        working-directory: blog
-        run: bundle exec jekyll b -s . -d "../_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b -s blog -d _site${{ steps.pages.outputs.base_path }}
         env:
           JEKYLL_ENV: "production"
+          BUNDLE_GEMFILE: ${{ github.workspace }}/blog/Gemfile
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site${{ steps.pages.outputs.base_path }}"
 
       # - name: Test site
       #   run: |
@@ -66,10 +71,6 @@ jobs:
       #       \-\-disable-external \
       #       \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
 
   deploy:
     environment:
