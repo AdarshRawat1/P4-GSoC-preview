@@ -44,9 +44,17 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
+      
+      - name: Move yearly posts to Jekyll folder
+        run: |
+          # Create _posts if it doesn't exist
+          mkdir -p blog/_posts
+          # Copy folders 2024, 2025, 2026 into blog/_posts
+          # We use -r for recursive and avoid errors if folders are missing
+          cp -r 20[0-9][0-9] blog/_posts/ 2>/dev/null || true
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b -s blog -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
 
