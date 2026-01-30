@@ -55,10 +55,10 @@ jobs:
           cp -r 20[0-9][0-9] blog/_posts/ 2>/dev/null || true
 
       - name: Build site
-        run: bundle exec jekyll b -s blog -d "_site${{ steps.pages.outputs.base_path }}"
+        working-directory: blog
+        run: bundle exec jekyll b -s . -d "../_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
-          BUNDLE_GEMFILE: ${{ github.workspace }}/blog/Gemfile
 
       # - name: Test site
       #   run: |
