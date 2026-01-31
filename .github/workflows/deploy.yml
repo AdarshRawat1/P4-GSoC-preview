@@ -41,7 +41,7 @@ jobs:
 
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build -s blog -d ../_site \
+          bundle exec jekyll build -s blog -d ${{ github.workspace }}/_site \
           --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
@@ -50,7 +50,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site"
+          path: ${{ github.workspace }}/_site
 
   deploy:
     environment:
