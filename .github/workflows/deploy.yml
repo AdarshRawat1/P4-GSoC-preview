@@ -1,14 +1,7 @@
 name: "Build and Deploy"
 on:
   push:
-    branches:
-      - main
-      - master
-    paths-ignore:
-      - .gitignore
-      - README.md
-      - LICENSE
-
+    branches: ["main", "master"]
   workflow_dispatch:
 
 permissions:
@@ -18,12 +11,11 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,21 +31,21 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
-          # Directs Ruby to the folder where your Gemfile lives
           working-directory: blog 
 
-      - name: Inject Yearly Posts
+      - name: Inject Content to Theme
         run: |
-          # Ensure destination exists
           mkdir -p blog/_posts
-          # Move 2024, 2025, etc. into the theme structure
-          cp -r 20[0-9][0-9] blog/_posts/ 2>/dev/null || true
+          
+          # Copy yearly folders into the Jekyll post directory
+          cp -r 2024 blog/_posts/ 2>/dev/null || true
+          cp -r 2025 blog/_posts/ 2>/dev/null || true
+          cp -r 2026 blog/_posts/ 2>/dev/null || true
 
       - name: Build with Jekyll
         run: bundle exec jekyll build -s blog -d _site${{ steps.pages.outputs.base_path }}
         env:
           JEKYLL_ENV: "production"
-          # Explicitly points to the Gemfile inside the blog folder
           BUNDLE_GEMFILE: ${{ github.workspace }}/blog/Gemfile
 
       - name: Upload site artifact
